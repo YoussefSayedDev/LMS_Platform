@@ -14,9 +14,9 @@ This project is a comprehensive Learning Management System (LMS) designed for te
 ## Technologies Used
 
 - **Frontend**: Next.js, React, Tailwind CSS
-- **Backend**: Node.js, Prisma
+- **Backend**: Node.js, Prisma, Lucia
 - **Database**: PostgreSQL
-- **Other Tools**: ShadCN for components, Git for version control
+- **Other Tools**: ShadCN for components, React Query
 
 ## Installation
 
@@ -28,7 +28,7 @@ This project is a comprehensive Learning Management System (LMS) designed for te
 
 2. Navigate to the project directory:
    ```bash
-   cd lms-platform
+   cd LMS_Platform
    ```
 3. Install dependencies:
    ```bash
