@@ -21,21 +21,23 @@ This project is a comprehensive Learning Management System (LMS) designed for te
 ## Installation
 
 1. Clone the repository:
-   \`\`\`bash
-   git clone https://github.com/yourusername/lms-platform.git
-   \`\`\`
+
+   ```bash
+   git clone https://github.com/YoussefSayedDev/LMS_Platform.git
+   ```
+
 2. Navigate to the project directory:
-   \`\`\`bash
+   ```bash
    cd lms-platform
-   \`\`\`
+   ```
 3. Install dependencies:
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 4. Start the development server:
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 ## Contributing
 
