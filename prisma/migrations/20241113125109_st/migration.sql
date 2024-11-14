@@ -7,6 +7,7 @@ CREATE TABLE "users" (
     "passwordHash" TEXT NOT NULL,
     "googleId" TEXT,
     "avatarUrl" TEXT,
+    "userType" TEXT NOT NULL DEFAULT 'STUDENT',
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 

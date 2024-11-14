@@ -3,6 +3,7 @@ import { Lucia, Session, User } from "lucia";
 import { cookies } from "next/headers";
 import { cache } from "react";
 import prisma from "./lib/prisma";
+import { UserType } from "./types/types";
 
 const adapter = new PrismaAdapter(prisma.session, prisma.user);
 
@@ -20,6 +21,7 @@ export const lucia = new Lucia(adapter, {
       displayName: databaseUserAttributes.displayName,
       avatarUrl: databaseUserAttributes.avatarUrl,
       googleId: databaseUserAttributes.googleId,
+      userType: databaseUserAttributes.userType,
     };
   },
 });
@@ -37,6 +39,7 @@ interface DatabaseUserAttributes {
   displayName: string;
   avatarUrl: string | null;
   googleId: string | null;
+  userType: UserType;
 }
 
 export const validateRequest = cache(

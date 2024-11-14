@@ -36,9 +36,13 @@ body {
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    /* --background: 222.2 84% 4.9%; */
+    /* --background: 216 2% 91%; */
+    --ggg: hsla(210, 7%, 5%, 0.811);
+    --background: 216, 8.81%, 5.49%;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: 240, 30%, 10%;
+    /* --card: 24 10% 10%; */
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
