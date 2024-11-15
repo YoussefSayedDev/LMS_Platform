@@ -4,15 +4,12 @@ import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
-  SidebarGroup,
-  SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { ChevronDown, ChevronUp, User2 } from "lucide-react";
+import { ChevronUp, User2 } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -22,7 +19,7 @@ import {
 
 export function AppSidebar() {
   return (
-    <Sidebar className="bg-card">
+    <Sidebar variant="floating">
       <SidebarHeader>
         <div className="my-4 text-center">
           <Logo classHeading="hidden md:block" />

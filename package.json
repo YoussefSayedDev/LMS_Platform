@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "overrides": {
+    "react-is": "^19.0.0-rc-66855b96-20241106"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@lucia-auth/adapter-prisma": "^4.0.1",

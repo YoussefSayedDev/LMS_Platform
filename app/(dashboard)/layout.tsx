@@ -18,9 +18,9 @@ const DashboardLayout = async ({
     <SessionProvider value={session}>
       <SidebarProvider>
         <AppSidebar />
-        <main className="w-full overflow-y-auto bg-sidebar">
+        <main className="relative min-h-screen w-full bg-background">
           <Navbar />
-          <SidebarTrigger />
+          <SidebarTrigger className="sticky top-[100px]" />
           {children}
         </main>
       </SidebarProvider>

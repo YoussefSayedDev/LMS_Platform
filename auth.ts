@@ -3,7 +3,7 @@ import { Lucia, Session, User } from "lucia";
 import { cookies } from "next/headers";
 import { cache } from "react";
 import prisma from "./lib/prisma";
-import { UserType } from "./types/types";
+import { UserType } from "./types/user-type";
 
 const adapter = new PrismaAdapter(prisma.session, prisma.user);
 

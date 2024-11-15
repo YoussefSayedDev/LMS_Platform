@@ -1,7 +1,8 @@
-import { UserType } from "@/types/types";
+import { UserType } from "@/types/user-type";
 import {
   BarChart,
-  BookOpen,
+  BookOpenCheck,
+  ChartSpline,
   FileText,
   Home,
   LifeBuoy,
@@ -10,6 +11,7 @@ import {
   MessageSquareWarning,
   Settings,
   User,
+  UserPen,
   Users,
 } from "lucide-react";
 
@@ -25,7 +27,7 @@ interface Item {
 }
 
 // Common link definitions
-const commonLinks = [{ title: "Home", url: "/", icon: Home }];
+const commonLinks = [{ title: "Home", url: "", icon: Home }];
 
 const helpLinks: LinksItem[] = [
   { title: "Support", url: "/support", icon: LifeBuoy },
@@ -44,7 +46,9 @@ const getUserLinks = (userType: UserType): LinksItem[] => {
       return [
         ...commonLinks,
         { title: "Assignments", url: "/assignments", icon: FileText },
-        { title: "Grades", url: "/grades", icon: BookOpen },
+        { title: "Grades", url: "/grades", icon: ChartSpline },
+        { title: "Courses", url: "/courses", icon: BookOpenCheck },
+        { title: "Teacher", url: "/teacher", icon: UserPen },
         { title: "Profile", url: "/profile", icon: User },
       ];
     case "TEACHER":
