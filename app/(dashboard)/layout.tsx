@@ -20,7 +20,7 @@ const DashboardLayout = async ({
         <AppSidebar />
         <main className="relative min-h-screen w-full bg-background">
           <Navbar />
-          <SidebarTrigger className="sticky top-[100px]" />
+          <SidebarTrigger className="sticky top-[95px] size-0" />
           {children}
         </main>
       </SidebarProvider>

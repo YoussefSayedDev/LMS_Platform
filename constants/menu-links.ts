@@ -14,11 +14,11 @@ import {
   UserPen,
   Users,
 } from "lucide-react";
-
 interface LinksItem {
   title: string;
   url: string;
-  icon: LucideIcon;
+  icon?: LucideIcon;
+  subLinks?: LinksItem[];
 }
 
 interface Item {
@@ -27,7 +27,7 @@ interface Item {
 }
 
 // Common link definitions
-const commonLinks = [{ title: "Home", url: "", icon: Home }];
+const commonLinks = [{ title: "Dashboard", url: "/dashboard", icon: Home }];
 
 const helpLinks: LinksItem[] = [
   { title: "Support", url: "/support", icon: LifeBuoy },
@@ -46,8 +46,18 @@ const getUserLinks = (userType: UserType): LinksItem[] => {
       return [
         ...commonLinks,
         { title: "Assignments", url: "/assignments", icon: FileText },
-        { title: "Grades", url: "/grades", icon: ChartSpline },
-        { title: "Courses", url: "/courses", icon: BookOpenCheck },
+        {
+          title: "Grades",
+          url: "/grades",
+          icon: ChartSpline,
+          subLinks: [{ title: "Math", url: "/math", icon: BookOpenCheck }],
+        },
+        {
+          title: "Courses",
+          url: "/courses",
+          icon: BookOpenCheck,
+          subLinks: [{ title: "My Courses", url: "/my-courses" }],
+        },
         { title: "Teacher", url: "/teacher", icon: UserPen },
         { title: "Profile", url: "/profile", icon: User },
       ];
